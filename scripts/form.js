@@ -20,19 +20,13 @@ form.addEventListener("submit", function (event) {
   const isEmailValid = !!email.match(regEmail);
   const isNameValid = !!name;
 
-  emailContainer.classList.remove("input__error");
-  nameContainer.classList.remove("input__error");
-  checkboxContainer.classList.remove("checkbox__error");
+  const handleValidation = (isValid, obj, error) => {
+    isValid ? obj.classList.remove(error) : obj.classList.add(error);
+  };
 
-  if (!isEmailValid) {
-    emailContainer.classList.add("input__error");
-  }
-  if (!isNameValid) {
-    nameContainer.classList.add("input__error");
-  }
-  if (!checkbox) {
-    checkboxContainer.classList.add("checkbox__error");
-  }
+  handleValidation(isEmailValid, emailContainer, "input__error");
+  handleValidation(isNameValid, nameContainer, "input__error");
+  handleValidation(checkbox, checkboxContainer, "checkbox__error");
 
   if (isEmailValid && isNameValid && checkbox) {
     const url = "example.com";
