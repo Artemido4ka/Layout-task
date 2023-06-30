@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+@import "./blocks/header";
+@import "./blocks/experience";
+@import "./blocks/footer";
+@import "./blocks/burger";
+@import "./common/common";
+
+@import "./variables/variables";
+@import "./breakpoints/breakpoints.scss";
+
+body {
+  font-family: "Montserrat";
+}

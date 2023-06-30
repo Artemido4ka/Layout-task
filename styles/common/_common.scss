@@ -1,0 +1,261 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  @include xl {
+    max-width: $breakpoint_lg;
+    padding: 0 10px;
+  }
+  @include lg {
+    max-width: $breakpoint_md;
+  }
+}
+
+.circle {
+  background-color: $orange-primary;
+  position: absolute;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+
+  &__small {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 36px;
+    width: 36px;
+  }
+
+  &__title-text {
+    position: absolute;
+  }
+
+  &__title-text {
+    position: absolute;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+  }
+}
+
+.button {
+  padding: 12px 25px;
+  border-radius: 0;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &__active {
+    background: $orange-primary;
+    box-shadow: 0px 4px 4px 0px $button-shadow;
+    &:hover {
+      background: $orange-secondary;
+      box-shadow: none;
+    }
+  }
+
+  &__inactive {
+    background: none;
+    &:hover {
+      background: $primary-gray;
+      box-shadow: none;
+    }
+  }
+}
+
+.text {
+  &__large-bold {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+    @include md {
+      font-size: 24px;
+    }
+  }
+
+  &__standart-bold {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__medium-bold {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &__small {
+    font-size: 12px;
+  }
+}
+
+.horizontal-line {
+  width: 60px;
+  height: 3px;
+  background-color: $orange-primary;
+}
+
+.error-message {
+  display: none;
+}
+
+.input {
+  &__primary {
+    border: 1px solid $primary-black;
+    border-radius: 0;
+    position: relative;
+    margin-top: 10px;
+    padding: 13px 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__label-text {
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    left: 20px;
+    background-color: $primary-white;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+
+  &__error {
+    input {
+      border-color: red;
+    }
+    .error-message {
+      display: block;
+      color: red;
+      font-size: 12px;
+      margin: 2px;
+    }
+  }
+}
+
+.textarea {
+  &__container {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__primary {
+    border-radius: 0;
+    position: relative;
+    margin-top: 10px;
+    padding: 13px 20px;
+    width: 100%;
+    height: 190px;
+    resize: none;
+    box-sizing: border-box;
+  }
+
+  &__label-text {
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+    left: 20px;
+    background-color: $primary-white;
+    padding: 0 8px;
+    font-size: 12px;
+  }
+}
+
+.checkbox-error-message {
+  display: none;
+}
+
+.checkbox {
+  &__block {
+    margin: 20px 0;
+    font-size: 12px;
+    @include sm {
+      max-width: 186px;
+      margin: 20px auto;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__error {
+    .checkbox-error-message {
+      display: block;
+      color: red;
+      font-size: 12px;
+      margin: 2px;
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    @include sm {
+      gap: 0;
+    }
+  }
+
+  &__text {
+    white-space: nowrap;
+  }
+
+  &__policy {
+    white-space: nowrap;
+    @include sm {
+      margin-left: 2px;
+    }
+  }
+
+  &__confidentiality {
+    @include sm {
+      margin-left: 18px;
+    }
+  }
+}
+
+.custom-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid black;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  @include sm {
+    margin-top: 10px;
+  }
+}
+
+.custom-checkbox:checked + label::before {
+  background-color: $orange-primary;
+  background-image: url("../../images/footer/checkmark.svg");
+}

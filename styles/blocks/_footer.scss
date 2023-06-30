@@ -1,0 +1,76 @@
+@import "../breakpoints/breakpoints.scss";
+
+.footer {
+  margin-top: 120px;
+  margin-bottom: 90px;
+  @include sm {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    display: flex;
+    max-width: 1054px;
+    gap: 68px;
+    padding-left: 52px;
+    padding-right: 76px;
+    @include lg {
+      flex-direction: column;
+    }
+    @include sm {
+      padding: 0;
+      max-width: 300px;
+    }
+  }
+
+  &__banner {
+    display: inline-block;
+    object-fit: cover;
+    @include md {
+      display: none;
+    }
+  }
+
+  &__circle-block {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 36px;
+    width: 36px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+
+  &__links  {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    @include xl {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__submit-block {
+    @include sm {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    max-width: 220px;
+  }
+}

@@ -1,0 +1,72 @@
+@import "../breakpoints/breakpoints.scss";
+@import "../variables/variables";
+
+.experience {
+  margin-top: 120px;
+  @include md {
+    margin-top: 40px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__top-line {
+    margin-top: 25px;
+    margin-bottom: 70px;
+    @include md {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    max-width: 986px;
+    gap: 143px;
+    @include md {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__content {
+    border-left: 1px solid $primary-black;
+  }
+
+  &__block {
+    position: relative;
+  }
+
+  &__block-title {
+    padding-left: 43px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__block-top {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  &__block-line {
+    width: 42px;
+    height: 1px;
+    background-color: $primary-black;
+  }
+
+  &__icon-block {
+    margin-right: 20px;
+  }
+
+  &__block-text {
+    margin-left: 43px;
+  }
+  
+  &__circle-top {
+    left: -8px;
+  }
+}

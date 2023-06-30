@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+
+  <body>
+    <header class="header" id="header-id">
+      <div class="header__container" id="header-container-id"></div>
+
+      <div class="burger" id="burger-id">
+        <div class="burger__content">
+          <div class="burger__close">
+            <button onclick="handleClick()" class="burger__close-button">
+              <img src="images/burger/close.svg" alt="close" />
+            </button>
+          </div>
+          <ul class="burger__list">
+            <li class="burger__item">ПРО МЕНЯ</li>
+            <li class="burger__item">МОЙ ОПЫТ</li>
+            <li class="burger__item">МОИ НАВЫКИ</li>
+            <li class="burger__item">МОИ РАБОТЫ</li>
+            <li class="burger__item">ПРАЙС-ЛИСТ</li>
+            <li class="burger__item">КОНТАКТЫ</li>
+          </ul>
+        </div>
+        <div class="burger__social">
+          <a href="https://github.com">
+            <img src="images/social-media/github.svg" alt="github" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img src="images/social-media/instagram.svg" alt="instagram" />
+          </a>
+          <a href="https://facebook.com">
+            <img src="images/social-media/facebook.svg" alt="facebook" />
+          </a>
+        </div>
+      </div>
+      <div class="burger__open-button" onclick="handleClick()">
+        <img src="images/Hamburger.svg" alt="burger" />
+      </div>
+      <div class="container">
+        <div class="header__block" _>
+          <div class="header__title">
+            <div class="circle"></div>
+            <div class="header__title-text">Меня зовут Александра Смит</div>
+          </div>
+          <div class="header__subtitle">Я web-разработчик из города Москва</div>
+          <div class="header__buttons">
+            <button class="button button__active">Портфолио</button>
+            <button class="button button__inactive">Про меня</button>
+          </div>
+        </div>
+      </div>
+      <div class="header__links">
+        <div class="header__links-text">Социальные сети</div>
+        <div class="header__links-line"></div>
+        <a href="https://github.com">
+          <img src="images/social-media/github.svg" alt="github" />
+        </a>
+        <a href="https://www.instagram.com">
+          <img src="images/social-media/instagram.svg" alt="instagram" />
+        </a>
+        <a href="https://facebook.com">
+          <img src="images/social-media/facebook.svg" alt="facebook" />
+        </a>
+      </div>
+    </header>
+    <section class="experience">
+      <div class="container">
+        <div class="experience__container">
+          <div class="circle__block">
+            <div class="circle"></div>
+            <div class="circle__title-text text__standart-bold">Опыт</div>
+          </div>
+          <div class="text__large-bold">Чем я буду полезна</div>
+          <div class="horizontal-line experience__top-line"></div>
+          <div class="experience__wrapper">
+            <div class="experience__content">
+              <div class="experience__block">
+                <div class="circle circle__small experience__circle-top"></div>
+                <div class="experience__block-title">Образование</div>
+                <div class="experience__block-top">
+                  <div class="experience__block-line"></div>
+                  <div class="circle__block experience__icon-block">
+                    <div class="circle"></div>
+                    <img
+                      class="circle__img"
+                      src="images/experience/university.svg"
+                      alt="university"
+                    />
+                  </div>
+                  <div>
+                    <div class="text__medium-bold">МГТУ им. Н. Э. Баумана</div>
+                    <div class="text__small">
+                      Диплом магистра | Москва (2014-2020)
+                    </div>
+                  </div>
+                </div>
+                <div class="text__small experience__block-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmo.
+                </div>
+              </div>
+              <div class="experience__block">
+                <div class="experience__block-top">
+                  <div class="experience__block-line"></div>
+                  <div class="circle__block experience__icon-block">
+                    <div class="circle"></div>
+                    <img
+                      class="circle__img"
+                      src="images/experience/courses.svg"
+                      alt="courses"
+                    />
+                  </div>
+                  <div>
+                    <div class="text__medium-bold">Udemy</div>
+                    <div class="text__small">Курсы по Web-разработке</div>
+                  </div>
+                </div>
+                <div class="text__small experience__block-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmo.
+                </div>
+              </div>
+            </div>
+            <div class="experience__content">
+              <div class="experience__block">
+                <div class="circle circle__small experience__circle-top"></div>
+                <div class="experience__block-title">Опыт работы</div>
+                <div class="experience__block-top">
+                  <div class="experience__block-line"></div>
+                  <div class="circle__block experience__icon-block">
+                    <div class="circle"></div>
+                    <img
+                      class="circle__img"
+                      src="images/experience/seo.svg"
+                      alt="seo"
+                    />
+                  </div>
+                  <div>
+                    <div class="text__medium-bold">Front-End Developer</div>
+                    <div class="text__small">EPAM | Москва (2018-2019)</div>
+                  </div>
+                </div>
+                <div class="text__small experience__block-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmo.
+                </div>
+              </div>
+              <div class="experience__block">
+                <div class="experience__block-top">
+                  <div class="experience__block-line"></div>
+                  <div class="circle__block experience__icon-block">
+                    <div class="circle"></div>
+                    <img
+                      class="circle__img"
+                      src="images/experience/designer.svg"
+                      alt="designer"
+                    />
+                  </div>
+                  <div>
+                    <div class="text__medium-bold">UI/UX Designer</div>
+                    <div class="text__small">Squad Team | Москва (2018)</div>
+                  </div>
+                </div>
+                <div class="text__small experience__block-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit, sed do eiusmo.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <img
+            class="footer__banner"
+            src="images/footer/banner.png"
+            alt="footer-img"
+          />
+          <div class="footer__content">
+            <div class="footer__circle-block">
+              <div class="circle"></div>
+              <div class="circle__title-text text__standart-bold">Контакты</div>
+            </div>
+            <div class="text__large-bold">Свяжитесь со мной</div>
+            <div class="horizontal-line"></div>
+            <div class="text__standart-bold">
+              Любым удобным для вас способом:
+            </div>
+            <div class="footer__links">
+              <a href="https://facebook.com">
+                <img src="images/footer/facebook.svg" alt="facebook" />
+              </a>
+              <a href="https://web.telegram.org">
+                <img src="images/footer/telegram.svg" alt="telegram" />
+              </a>
+              <a href="https://www.instagram.com">
+                <img src="images/footer/instagram.svg" alt="instagram" />
+              </a>
+            </div>
+            <div class="text__standart-bold">
+              Или оставьте ваши данные и я сама вам напишу:
+            </div>
+            <form id="form">
+              <div class="footer__inputs">
+                <div class="input__container" id="nameContainer">
+                  <label class="input__label-text" for="first">Ваше имя</label>
+                  <input id="name" class="input__primary" />
+                  <div class="error-message" id="email-error">
+                    Name is required !
+                  </div>
+                </div>
+                <div class="input__container" id="emailContainer">
+                  <label class="input__label-text" for="first"
+                    >Ваша почта</label
+                  >
+                  <input id="email" class="input__primary" />
+                  <div class="error-message" id="email-error">
+                    Email is wrong !
+                  </div>
+                </div>
+              </div>
+              <div class="textarea__container">
+                <label class="textarea__label-text" for="first"
+                  >Ваше сообщение</label
+                >
+                <textarea id="text" class="textarea__primary"> </textarea>
+              </div>
+              <div class="checkbox__block" id="checkboxContainer">
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  name="checkbox"
+                  id="checkbox"
+                  value="true"
+                />
+                <label class="checkbox__label" for="checkbox">
+                  <label class="checkbox__text"> Я согласен(а) </label>
+                  <label class="checkbox__policy">
+                    <a href="#!"> с политикой </a>
+                  </label>
+                  <label class="checkbox__confidentiality">
+                    <a href="#!"> конфиденциальности </a>
+                  </label>
+                </label>
+                <div class="checkbox-error-message" id="checkbox-error!">
+                  Apply the terms !
+                </div>
+              </div>
+              <div class="footer__submit-block">
+                <button
+                  class="button button__active footer__button"
+                  type="submit"
+                >
+                  Отправить сообщение
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/form.js"></script>
+  </body>
+</html>

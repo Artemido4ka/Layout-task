@@ -1,0 +1,87 @@
+@import "../breakpoints/breakpoints.scss";
+@import "../variables/variables";
+
+.header {
+  background: url(../../images/background.jpg) no-repeat center;
+  height: 800px;
+  max-width: 1920px;
+  position: relative;
+  @include sm {
+    background-position: 60% 25%;
+  }
+  @include xs {
+    background: url(../../images/background-small.png) no-repeat center;
+    height: 640px;
+  }
+
+  &__container {
+    display: none;
+    background-color: $secondary-gray;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__block {
+    padding-top: 200px;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 36px;
+  }
+
+  &__title-text {
+    font-size: 16px;
+    position: absolute;
+    margin-left: 10px;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    max-width: 530px;
+    @include md {
+      font-size: 36px;
+    }
+    @include sm {
+      font-size: 26px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 25px;
+    gap: 44px;
+  }
+
+  &__links {
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    top: 400px;
+    left: -100px;
+    transform: rotate(-90deg);
+    @include xxl {
+      display: none;
+    }
+  }
+
+  &__links-line {
+    width: 70px;
+    height: 2px;
+    background-color: $primary-black;
+  }
+
+  &__links-text {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
